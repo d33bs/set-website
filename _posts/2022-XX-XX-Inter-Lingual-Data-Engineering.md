@@ -61,13 +61,18 @@ flowchart LR
         SQL[SQL] --> DuckDB[DuckDB Client]
     end
     parquet1[example.parquet] --> duckdb
-    parquet2[example.sqlite] --> duckdb
-    parquet3[example.csv] --> duckdb
+    sqlite[example.sqlite] --> duckdb
+    csv[example.csv] --> duckdb
+    arrow["in-memory Arrow"] --> duckdb
     duckdb --> Arrow
     Arrow --> Other[Other work...]
 ```
 
-DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change Arrow, CSV, or Parquet data, using Arrow as a return type. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written subprocedures.
+DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change Arrow, CSV, or Parquet data, using Arrow as a return type. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written subprocedures. Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by other imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)).
+
+## Example Python with SQL to Join Arrow Data with DuckDB
+
+The following example shows how to use SQL to join data from multiple sources using the DuckDB client API within Python.
 
 ## Additional Resources
 
