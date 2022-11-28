@@ -65,10 +65,12 @@ flowchart LR
     csv[example.csv] --> duckdb
     arrow["in-memory Arrow"] --> duckdb
     duckdb --> Arrow
+    pandas["in-memory Pandas"] --> duckdb
+    duckdb --> Arrow
     Arrow --> Other[Other work...]
 ```
 
-DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change Arrow, CSV, or Parquet data, using Arrow as a return type. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written subprocedures. Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by other imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)).
+DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change Arrow, CSV, or Parquet data, using Arrow as a return type. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written sub-procedures. Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)).
 
 ## Example Python with SQL to Join Arrow Data with DuckDB
 
