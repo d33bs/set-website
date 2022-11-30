@@ -64,7 +64,6 @@ flowchart LR
     sqlite[example.sqlite] --> duckdb
     csv[example.csv] --> duckdb
     arrow["in-memory Arrow"] --> duckdb
-    duckdb --> Arrow
     pandas["in-memory Pandas"] --> duckdb
     duckdb --> Arrow
     Arrow --> Other[Other work...]
@@ -74,9 +73,11 @@ DuckDB provides a management client and relational database format (similar to S
 
 ## Example Python with SQL to Join Arrow Data with DuckDB
 
-{% include figure.html image="../images/duckdb_arrow_query_example.png" caption="Jupyter notebook example screenshot with DuckDB and Arrow data handling" %}
+{% include figure.html image="../images/duckdb_arrow_query_example.png" caption="Jupyter notebook example screenshot with DuckDB and Arrow data handling" width="500px" %}
 
-The following example shows how to use SQL to join data from multiple sources using the DuckDB client API within Python.
+The following example notebook shows how to use SQL to join data from multiple sources using the DuckDB client API within Python. The example includes DuckDB querying a remote CSV, local Parquet file, and Arrow in-memory tables.
+
+[Linked Example](example)
 
 ## Additional Resources
 
