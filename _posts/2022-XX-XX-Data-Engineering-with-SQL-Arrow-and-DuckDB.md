@@ -73,9 +73,9 @@ flowchart LR
     Arrow --> Other[Other work...]
 </pre>
 
-DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change Arrow, CSV, or Parquet data, using Arrow as a return type. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written sub-procedures.
+DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change various data types. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written sub-procedures.
 
-Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)).
+Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)). It also allows your SQL-based data management code to be used within other languages without additional rewrites.
 
 ## Example Python with SQL to Join Arrow Data with DuckDB
 
