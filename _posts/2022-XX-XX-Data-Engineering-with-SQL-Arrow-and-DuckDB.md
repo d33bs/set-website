@@ -19,7 +19,7 @@ tags:
 [Apache Arrow](https://arrow.apache.org/) is a language-independent and high performance data format useful in many scenarios. [DuckDB](https://duckdb.org/) is an in-process [SQL](https://en.wikipedia.org/wiki/SQL)-based data management system which is Arrow-compatible. DuckDB also provides a standardized and high performance way to work with Arrow data where otherwise one may be forced to language-specific data structures or transforms.
 
 __TLDR (too long, didn't read);__
-DuckDB may be used to access and transform Arrow-based data from multiple data formats through SQL. Using DuckDB in this way may provide improvements in performance, understandability, or long term maintainability of your code.
+DuckDB may be used to access and transform Arrow-based data from multiple data formats through SQL. Using Arrow and DuckDB provides a cross-language way to access and manage data. Data development with these tools may also enable improvements in performance, understandability, or long term maintainability of your code.
 
 ## Reduce Wasted Conversion Effort with Arrow
 
@@ -77,9 +77,9 @@ DuckDB provides a management client and relational database format (similar to S
 
 Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)). It also allows your SQL-based data management code to be used within other languages without additional rewrites.
 
-## Example Python with SQL to Join Arrow Data with DuckDB
+## Example with SQL to Join Arrow Data with DuckDB in Python
 
-{% include figure.html image="../images/duckdb_arrow_query_example.png" caption="Jupyter notebook example screenshot with DuckDB and Arrow data handling" width="500px" %}
+{% include figure.html image="images/duckdb_arrow_query_example.png" caption="Jupyter notebook example screenshot with DuckDB and Arrow data handling" width="500px" %}
 
 The following example notebook shows how to use SQL to join data from multiple sources using the DuckDB client API within Python. The example includes DuckDB querying a remote CSV, local Parquet file, and Arrow in-memory tables.
 
