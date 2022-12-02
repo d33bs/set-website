@@ -56,10 +56,10 @@ The above shows an example [mermaid flowchart](https://mermaid-js.github.io/merm
 ## Mermaid Github Integration
 
 {% capture col1content %}
-{% include figure.html image="../images/github_mermaid_code.png" caption="Github comment"  %}
+{% include figure.html image="images/github_mermaid_code.png" caption="Github comment"  %}
 {% endcapture %}
 {% capture col2content %}
-{% include figure.html image="../images/github_mermaid_preview.png" caption="Github comment preview"  %}
+{% include figure.html image="images/github_mermaid_preview.png" caption="Github comment preview"  %}
 {% endcapture %}
 
 {% include two-col.html col1=col1content col2=col2content %}
@@ -68,7 +68,7 @@ Mermaid diagrams may be rendered directly from markdown (`.md`) and text communi
 
 ## Mermaid Jupyter Notebook Integration
 
-{% include figure.html image="../images/jupyter_mermaid_example.png" caption="Mermaid content rendered in a Jupyter notebook"  width="500px" %}
+{% include figure.html image="images/jupyter_mermaid_example.png" caption="Mermaid content rendered in a Jupyter notebook"  width="500px" %}
 Mermaid diagrams can be rendered directly within [Jupyter notebooks](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook_Documents) with a small amount of additional code and a rendering service. One way to render mermaid and other diagrams within notebooks is to use [Kroki.io](https://kroki.io/). See [this example](https://cu-dbmi.github.io/notebooks/lab?path=mermaid_example.ipynb) for an interactive demonstration.
 
 ## Version Controlling Your Diagrams
