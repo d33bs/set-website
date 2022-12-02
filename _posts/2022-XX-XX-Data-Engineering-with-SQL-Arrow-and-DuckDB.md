@@ -28,7 +28,6 @@ flowchart TB
     Python:::outlined <--> Arrow
     R:::outlined <--> Arrow
     C++:::outlined <--> Arrow
-    Go:::outlined <--> Arrow
     Java:::outlined <--> Arrow
     others...:::outlined <--> Arrow
 
@@ -42,19 +41,23 @@ flowchart TB
 Arrow provides a [multi-language](https://arrow.apache.org/docs/) data format which prevents you from needing to convert to other formats when dealing with multiple in-memory or serialized data formats. For example, this means that a Python and an R package may use the same in-memory or file-based data without conversion (where normally a Python Pandas dataframe and R data frame may require a conversion step in between).
 
 <pre class="mermaid">
-flowchart BT
+flowchart TB
     subgraph Python
-      Pandas:::outlined <--> Arrow
-      Polars:::outlined <--> Arrow
-      Xarray:::outlined <--> Arrow
-      dict[Python dict]:::outlined <--> Arrow
-      list[Python list]:::outlined <--> Arrow
+      Pandas:::outlined
+      Polars:::outlined
+      dict[Python dict]:::outlined
+      list[Python list]:::outlined
     end
+
+    Pandas <--> Arrow
+    Polars <--> Arrow
+    dict <--> Arrow
+    list <--> Arrow
 
   classDef outlined fill:#fff,stroke:#333
 </pre>
 
-The same stands for various libraries within one language - Arrow enables development between various language library formats (for example, a Python Pandas dataframe and Python dictionary are two distinct in-memory formats which require a conversion in between). You can save time and effort by avoiding conversions using Arrow.
+The same stands for various libraries within one language - Arrow enables interchange between various language library formats (for example, a Python Pandas dataframe and Python dictionary are two distinct in-memory formats which may require conversions). Conversions to or from these formats can involve data type or other inferences which are costly to productivity. You can save time and effort by avoiding conversions using Arrow.
 
 ## Using SQL to Join or Transform Arrow Data via DuckDB
 
@@ -73,9 +76,25 @@ flowchart LR
     Arrow --> Other[Other work...]
 </pre>
 
-DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change various data types. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. DuckDB provides client API's in many languages (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written sub-procedures.
+DuckDB provides a management client and relational database format (similar to SQLite databases) which may be handled with Arrow. SQL may be used with the DuckDB client to filter, join, or change various data types. Due to Arrow's cross-language properties, there is no additional cost to using SQL through DuckDB to return data for implementation within other purpose-built data formats. [DuckDB provides client API's in many languages](https://duckdb.org/docs/api/overview) (for example, Python, R, and C++), making it possible to write DuckDB client code with SQL to manage data without having to use manually written sub-procedures.
 
-Using SQL to perform these operations provides an opportunity to take advantage of roughly 48 years worth of data management improvements without being constrained by imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)). It also allows your SQL-based data management code to be used within other languages without additional rewrites.
+<pre class="mermaid">
+flowchart TB
+  subgraph duckdb["DuckDB Processing"]
+        direction BT
+        SQL[SQL] --> DuckDB[DuckDB Client]
+    end
+    Python:::outlined <--> duckdb
+    R:::outlined <--> duckdb
+    C++:::outlined <--> duckdb
+    Java:::outlined <--> duckdb
+    others...:::outlined <--> duckdb
+    duckdb <--> Arrow
+
+    classDef outlined fill:#fff,stroke:#333
+</pre>
+
+Using SQL to perform these operations with Arrow provides an opportunity for your data code to be used (or understood) within other languages without additional rewrites. SQL also provides you access to roughly 48 years worth of data management improvements without being constrained by imperative language data models or schema (reference: [SQL Wikipedia: _First appeared: 1974_](https://en.wikipedia.org/wiki/SQL)).
 
 ## Example with SQL to Join Arrow Data with DuckDB in Python
 
