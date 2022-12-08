@@ -46,16 +46,43 @@ _Diagram showing code lifecycle activities._
 
 Adding code to a project involves a loose agreement to maintenance for however long the code is available. The maintenance of the code can involve added efforts in changes as well as passive impacts like longer test durations or decreased readability (simply from more code).
 
-![](../images/time-and-cost-code-maintenance-chart.png)
+```vega-lite
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "A simple line chart to demonstrate lines of code and associated theoretical time cost.",
+    "title":"Time Cost per Line of Code",
+    "width": 500,
+    "height": 200,
+    "config": {
+      "title":{"fontSize":14},
+      "axisY":{"titleFontSize":14, "labelFontSize":12},
+      "axisX":{"titleFontSize":14, "labelFontSize":12}
+    },
+    "data": {
+      "values": [
+        {"x": 1, "y": 28},
+        {"x": 1000, "y": 500}
+      ]
+    },
+    "mark": {"type": "line", "point": {"filled": false,
+      "fill": "white", "size":50
+    }},
+    "encoding": {
+      "x": {"title": "Lines of Code", "field": "x", "type": "quantitative", "scale": {"domain": [1, 1000]}
+      },
+      "y": {"title": "Time (minutes)", "field": "y", "type": "quantitative", "scale": {"domain": [1, 500]}}
+    }
+  }
+```
 
-When considering multiple parts of code in many files, this maintenance can become untenable, leading to the gradual decay of your code quality or functionality. For example, let's assume one line of code costs 30 seconds to maintain (feel free to substitute time with monetary or personnel aspects as an example measure here too). 1000 lines of code would cost about 8 hours to maintain. This becomes more complex when considering multiple files, collaborators, or languages.
+{:.center}
+
+When considering multiple parts of code in many files, this maintenance can become untenable, leading to the gradual decay of your code quality or functionality. For example, let's assume one line of code costs 30 seconds to maintain (feel free to substitute time with monetary or personnel aspects as an example measure here too). 1000 lines of code would cost 500 minutes (or about 8 hours) to maintain. This becomes more complex when considering multiple files, collaborators, or languages.
 
 <i class="fas fa-hiking" style="font-size:4em;"></i>
 {:.center}
 
 Think about your project as if it were on a hiking trail: __"Carry as little as possible, but choose that little with care."__ (Earl Shaffer). Be careful what code you choose to carry; it may impact your ability to address needs over time and lead to otherwise unintended software decay.
-
-<i class="fas fa-hiking" style="font-size:4em;"></i>
 
 ## Detecting Unused Code with Vulture
 
