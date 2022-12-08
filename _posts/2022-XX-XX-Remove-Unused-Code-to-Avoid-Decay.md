@@ -46,18 +46,22 @@ _Diagram showing code lifecycle activities._
 
 Adding code to a project involves a loose agreement to maintenance for however long the code is available. The maintenance of the code can involve added efforts in changes as well as passive impacts like longer test durations or decreased readability (simply from more code).
 
-When considering multiple parts of code in many files, this maintenance can become untenable, leading to the gradual decay of your code quality or functionality. For example, let's assume one line of code costs 30 seconds to maintain. 1000 lines of code would cost about 8 hours to maintain. This becomes more complex when considering multiple files, collaborators, or languages.
+![](../images/time-and-cost-code-maintenance-chart.png)
+
+When considering multiple parts of code in many files, this maintenance can become untenable, leading to the gradual decay of your code quality or functionality. For example, let's assume one line of code costs 30 seconds to maintain (feel free to substitute time with monetary or personnel aspects as an example measure here too). 1000 lines of code would cost about 8 hours to maintain. This becomes more complex when considering multiple files, collaborators, or languages.
 
 <i class="fas fa-hiking" style="font-size:4em;"></i>
 {:.center}
 
-Think about your project as if they were on a hiking trail: __"Carry as little as possible, but choose that little with care."__ (Earl Shaffer). Be careful what code you choose to carry; it may impact your ability to address needs over time or overburden your project.
+Think about your project as if it were on a hiking trail: __"Carry as little as possible, but choose that little with care."__ (Earl Shaffer). Be careful what code you choose to carry; it may impact your ability to address needs over time and lead to otherwise unintended software decay.
 
 <i class="fas fa-hiking" style="font-size:4em;"></i>
 
 ## Detecting Unused Code
 
-Understanding the cost of added content, it's important to routinely examine which parts of your code are still necessary. You can prepare your code for a long journey by detecting (and removing) unused code with various tools.
+Understanding the cost of added content, it's important to routinely examine which parts of your code are still necessary. You can prepare your code for a long journey by detecting (and removing) unused code with various automated tools. These tools are generally designed for static analysis and linting, meaning they may also be incorporated into automated and routine testing.
+
+[Vulture](https://github.com/jendrikseipp/vulture) is one tool dedicated to finding unused python code.
 
 ## Additional Resources
 
