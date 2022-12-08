@@ -57,11 +57,27 @@ Think about your project as if it were on a hiking trail: __"Carry as little as 
 
 <i class="fas fa-hiking" style="font-size:4em;"></i>
 
-## Detecting Unused Code
+## Detecting Unused Code with Vulture
 
 Understanding the cost of added content, it's important to routinely examine which parts of your code are still necessary. You can prepare your code for a long journey by detecting (and removing) unused code with various automated tools. These tools are generally designed for static analysis and linting, meaning they may also be incorporated into automated and routine testing.
 
-[Vulture](https://github.com/jendrikseipp/vulture) is one tool dedicated to finding unused python code.
+```shell
+$ vulture unused_code_example.py
+unused_code_example.py:3: unused import 'os' (90% confidence)
+unused_code_example.py:4: unused import 'pd' (90% confidence)
+unused_code_example.py:7: unused function 'unused_function' (60% confidence)
+unused_code_example.py:14: unused variable 'unused_var' (60% confidence)
+```
+
+_Example of Vulture command line usage to discover unused code._
+
+[Vulture](https://github.com/jendrikseipp/vulture) is one tool dedicated to finding unused python code. Vulture provides both a command line interface and Python API for discovering unused code. It also provide a rough confidence to show how certain it was about whether the block of code was unused. See the following interactive example for a demonstration of using Vulture.
+
+[Example Link]()
+
+## Further Code Usefulness Detection with Pylint and Coverage.py
+
+In addition to Vulture, [Pylint](https://pylint.pycqa.org/en/latest/index.html) and [Coverage](https://coverage.readthedocs.io/) can be used in a similar way to help show where code may not have been used within your project. Pylint focuses on code style and other static analysis in addition to unused variables. See [Pylint's Checkers](https://pylint.pycqa.org/en/latest/user_guide/checkers/features.html) page for more details here, using "unused-*" as a reference to checks it performs which focus on unused code.
 
 ## Additional Resources
 
