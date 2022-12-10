@@ -8,8 +8,9 @@ tags:
   - code-quality
   - software-decay
   - code-decay
-  - dead-code
   - vulture
+  - pylint
+  - coverage.py
 ---
 
 # Tip of the Week: Remove Unused Code to Avoid Software Decay
@@ -106,7 +107,7 @@ _Example of Vulture command line usage to discover unused code._
 
 [Vulture](https://github.com/jendrikseipp/vulture) is one tool dedicated to finding unused python code. Vulture provides both a command line interface and Python API for discovering unused code. It also provide a rough confidence to show how certain it was about whether the block of code was unused. See the following interactive example for a demonstration of using Vulture.
 
-[Example Link]()
+[Example Link](https://cu-dbmi.github.io/notebooks/lab?path=unused_code_detection.ipynb)
 
 ## Further Code Usefulness Detection with Pylint and Coverage.py
 
