@@ -46,9 +46,13 @@ _Diagram showing code lifecycle activities._
 
 Adding code to a project involves a loose agreement to maintenance for however long the code is available. The maintenance of the code can involve added efforts in changes as well as passive impacts like longer test durations or decreased readability (simply from more code).
 
-```vega-lite
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+<div id="vis"></div>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+<script>
+var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.5.0.json",
     "description": "A simple line chart to demonstrate lines of code and associated theoretical time cost.",
     "title":"Time Cost per Line of Code",
     "width": 500,
@@ -73,8 +77,10 @@ Adding code to a project involves a loose agreement to maintenance for however l
       "y": {"title": "Time (minutes)", "field": "y", "type": "quantitative", "scale": {"domain": [1, 500]}}
     }
   }
-```
-
+const embed_opt = {"mode": "vega-lite"};
+const el = document.getElementById('vis');
+const view = vegaEmbed("#vis", spec, embed_opt);
+</script>
 {:.center}
 
 When considering multiple parts of code in many files, this maintenance can become untenable, leading to the gradual decay of your code quality or functionality. For example, let's assume one line of code costs 30 seconds to maintain (feel free to substitute time with monetary or personnel aspects as an example measure here too). 1000 lines of code would cost 500 minutes (or about 8 hours) to maintain. This becomes more complex when considering multiple files, collaborators, or languages.
@@ -104,7 +110,11 @@ _Example of Vulture command line usage to discover unused code._
 
 ## Further Code Usefulness Detection with Pylint and Coverage.py
 
-In addition to Vulture, [Pylint](https://pylint.pycqa.org/en/latest/index.html) and [Coverage](https://coverage.readthedocs.io/) can be used in a similar way to help show where code may not have been used within your project. Pylint focuses on code style and other static analysis in addition to unused variables. See [Pylint's Checkers](https://pylint.pycqa.org/en/latest/user_guide/checkers/features.html) page for more details here, using "unused-*" as a reference to checks it performs which focus on unused code.
+In addition to Vulture, [Pylint](https://pylint.pycqa.org/en/latest/index.html) and [Coverage.py](https://coverage.readthedocs.io/) can be used in a similar way to help show where code may not have been used within your project.
+
+[Pylint](https://pylint.pycqa.org/en/latest/index.html) focuses on code style and other static analysis in addition to unused variables. See [Pylint's Checkers](https://pylint.pycqa.org/en/latest/user_guide/checkers/features.html) page for more details here, using "unused-*" as a reference to checks it performs which focus on unused code.
+
+[Coverage.py](https://coverage.readthedocs.io/) helps show you which parts of your code have been executed or not. A common usecase for Coverage involves measuring "test coverage", or which parts of your code are executed in relationship to tests written for that code. This provides another perspective on code utility; if there's not a test for the code, is it worth keeping?
 
 ## Additional Resources
 
