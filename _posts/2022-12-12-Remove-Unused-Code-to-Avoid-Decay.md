@@ -48,6 +48,8 @@ _Diagram showing code lifecycle activities._
 Adding code to a project involves a loose agreement to maintenance for however long the code is available. The maintenance of the code can involve added efforts in changes as well as passive impacts like longer test durations or decreased readability (simply from more code).
 
 <div id="vis"></div>
+{:.center}
+
 <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
@@ -82,7 +84,6 @@ const embed_opt = {"mode": "vega-lite"};
 const el = document.getElementById('vis');
 const view = vegaEmbed("#vis", spec, embed_opt);
 </script>
-{:.center}
 
 When considering multiple parts of code in many files, this maintenance can become untenable, leading to the gradual decay of your code quality or functionality. For example, let's assume one line of code costs 30 seconds to maintain (feel free to substitute time with monetary or personnel aspects as an example measure here too). 1000 lines of code would cost 500 minutes (or about 8 hours) to maintain. This becomes more complex when considering multiple files, collaborators, or languages.
 
