@@ -30,6 +30,8 @@ flowchart TB
   mermaid.initialize({ startOnLoad: true });
 </script>
 
+[Spelling checks](https://en.wikipedia.org/wiki/Spell_checker) may be used to automatically detect incorrect spellings of words within your documentation (and code!). [Codespell](https://github.com/codespell-project/codespell) is one library which can lint your word spelling. Codespell may be used through the command-line and also through a [pre-commit](https://pre-commit.com/index.html) hook.
+
 - [codespell](https://github.com/codespell-project/codespell)
 
 ## File Format Specification
@@ -39,6 +41,7 @@ flowchart TB
 Additional and similar resources to explore in this area:
 
 - [restructuredtext-lint](https://github.com/twolfson/restructuredtext-lint)
+- [markdownlint](https://github.com/markdownlint/markdownlint)
 
 ## Editorial Style and Natural Language
 
