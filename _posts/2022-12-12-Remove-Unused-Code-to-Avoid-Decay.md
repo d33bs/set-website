@@ -17,7 +17,7 @@ tags:
 
 > Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
-The act of creating software often involves many iterations of writing, personal collaborations, and testing. During this process it's common to lose awareness of code which is no longer used (and may not be tested or otherwise linted). Unused code may contribute to ["software decay"](https://en.wikipedia.org/wiki/Software_rot) (the gradual diminishment of code quality or functionality). This post will cover software decay and strategies for addressing unused code to help keep your code quality high.
+The act of creating software often involves many iterations of writing, personal collaborations, and testing. During this process it's common to lose awareness of code which is no longer used, and thus may not be tested or otherwise linted. Unused code may contribute to ["software decay"](https://en.wikipedia.org/wiki/Software_rot), the gradual diminishment of code quality or functionality. This post will cover software decay and strategies for addressing unused code to help keep your code quality high.
 
 __TLDR (too long, didn't read);__
 Unused code is easy to amass and may cause your code quality or code functionality to diminish ("decay") over time. Effort must be taken to maintain any code or artifacts you add to your repositories, including those which are unused. Consider using [Vulture](https://github.com/jendrikseipp/vulture), [Pylint](https://pylint.pycqa.org/), or [Coverage](https://coverage.readthedocs.io/) to help illuminate sections of your code which may need to be removed.
@@ -116,7 +116,7 @@ In addition to Vulture, [Pylint](https://pylint.pycqa.org/en/latest/index.html) 
 
 [Pylint](https://pylint.pycqa.org/en/latest/index.html) focuses on code style and other static analysis in addition to unused variables. See [Pylint's Checkers](https://pylint.pycqa.org/en/latest/user_guide/checkers/features.html) page for more details here, using "unused-*" as a reference to checks it performs which focus on unused code.
 
-[Coverage.py](https://coverage.readthedocs.io/) helps show you which parts of your code have been executed or not. A common usecase for Coverage involves measuring "test coverage", or which parts of your code are executed in relationship to tests written for that code. This provides another perspective on code utility; if there's not a test for the code, is it worth keeping?
+[Coverage.py](https://coverage.readthedocs.io/) helps show you which parts of your code have been executed or not. A common usecase for Coverage involves measuring "test coverage", or which parts of your code are executed in relationship to tests written for that code. This provides another perspective on code utility: if there's not a test for the code, is it worth keeping?
 
 ## Additional Resources
 
