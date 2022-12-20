@@ -22,6 +22,8 @@ There are many linting tools available which enable quick revision of your docum
 
 ## Spelling Checks
 
+{% capture col1content %}
+
 ```markdown
 <!--- readme.md --->
 ## Example Readme
@@ -33,6 +35,8 @@ Code will be updated by the team very often.
 ```
 
 _Example readme.md with incorrectly spelled words_
+{% endcapture %}
+{% capture col2content %}
 
 ```console
 % codespell readme.md
@@ -44,10 +48,14 @@ readme.md:4: progess ==> progress
 ```
 
 _Example showing codespell detection of mispelled words_
+{% endcapture %}
+{% include two-col.html col1=col1content col2=col2content %}
 
 [Spelling checks](https://en.wikipedia.org/wiki/Spell_checker) may be used to automatically detect incorrect spellings of words within your documentation (and code!). [Codespell](https://github.com/codespell-project/codespell) is one library which can lint your word spelling. Codespell may be used through the command-line and also through a [pre-commit](https://pre-commit.com/index.html) hook.
 
 ## Markdown Format Linting
+
+{% capture col1content %}
 
 ```markdown
 <!--- readme.md --->
@@ -60,6 +68,8 @@ Code will be updated by the team very often.
 ```
 
 _Example readme.md with markdown issues_
+{% endcapture %}
+{% capture col2content %}
 
 ```console
 % markdownlint readme.md
@@ -71,6 +81,8 @@ readme.md:6:5 MD011/no-reversed-links Reversed link syntax [(link)[https://www.c
 ```
 
 _Example showing markdownlint detection of issues_
+{% endcapture %}
+{% include two-col.html col1=col1content col2=col2content %}
 
 The format of your documentation files may also be linted for common issues. This may catch things which are otherwise hard to see when editing content. It may also improve the overall [web accessibility](https://en.wikipedia.org/wiki/Web_accessibility) of your content, for example, through proper HTML header order and image alternate text. [Markdownlint](https://github.com/markdownlint/markdownlint) is one library which can be used to find issues within markdown files.
 
@@ -80,6 +92,8 @@ Additional and similar resources to explore in this area:
 - [mdformat](https://github.com/executablebooks/mdformat) - an additional markdown linter
 
 ## Editorial Style and Grammar
+
+{% capture col1content %}
 
 ```markdown
 <!--- readme.md --->
@@ -92,6 +106,8 @@ Code will be updated by the team very often.
 ```
 
 _Example readme.md with questionable editorial style_
+{% endcapture %}
+{% capture col2content %}
 
 ```console
 % vale readme-example.md
@@ -104,6 +120,8 @@ _Example readme.md with questionable editorial style_
 ```
 
 _Example showing vale detection of questionable editorial style_
+{% endcapture %}
+{% include two-col.html col1=col1content col2=col2content %}
 
 Maintaining consistent editorial style and grammar may also be a focus within your documentation. These issues are sometimes more difficult to detect and more opinionated in nature. In some cases, organizations publish guides on this topic (see [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/), or [Google Developer Documenation Style Guide](https://developers.google.com/style)). Some of the complexity of writing style may be linted through tools like [Vale](https://vale.sh/). Using common configurations through Vale can unify how language is used within your documentation by linting for common style and grammar.
 
