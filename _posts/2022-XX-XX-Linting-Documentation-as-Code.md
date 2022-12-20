@@ -103,7 +103,7 @@ _Example readme.md with questionable editorial style_
  5:34  warning     'very' is a weasel word!        write-good.Weasel
 ```
 
-_Example showing codespell detection of mispelled words_
+_Example showing vale detection of questionable editorial style_
 
 Maintaining consistent editorial style and grammar may also be a focus within your documentation. These issues are sometimes more difficult to detect and more opinionated in nature. In some cases, organizations publish guides on this topic (see [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/), or [Google Developer Documenation Style Guide](https://developers.google.com/style)). Some of the complexity of writing style may be linted through tools like [Vale](https://vale.sh/). Using common configurations through Vale can unify how language is used within your documentation by linting for common style and grammar.
 
