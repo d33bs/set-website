@@ -18,15 +18,52 @@ __TLDR (too long, didn't read);__
 
 ## Why this matters
 
+<i class="fas fa-home" style="font-size:4em;"></i>
+{:.center}
+
 Software environment management is crucial because [software decay](https://en.wikipedia.org/wiki/Software_rot#Environment_change) may occur due to environmental change. If software is unable to be used due to the environment, it risks becoming meaningless to the audience. One way to think of this is as software shelter; code is unprotected and may fall victim to the elements without a home.
 
 ## Local or Development Environment (Surface Layer)
 
+```mermaid
+flowchart BT
+    local["Local Development\nEnvironment"]
+    style local fill:#9FE2A6,stroke:#aaa
+```
+
+The first layer our code typically lives in is the local development environment. This can be thought of as the surface layer. This is where code is initially written and tested by the developer.
+
 ## Operating System Environment (Planetary Layer)
 
-## Inter-System Environment (Solar System Layer)
+```mermaid
+flowchart BT
+    subgraph os [Operating System]
+      local["Local Development\nEnvironment"]
+    end
+    style local fill:#fff,stroke:#aaa
+    style os fill:#9FE2DE,stroke:#aaa
+```
 
-## Exo-System Environment (Galaxy Layer)
+## Inter-Systems Environment (Solar System Layer)
+
+```mermaid
+flowchart LR
+    subgraph is [Inter-system]
+    direction LR
+      subgraph os [Operating System X]
+        local["Local Development\nEnvironment X"]
+      end
+      subgraph os2 [Operating System Y]
+        local2["Local Development\nEnvironment Y"]
+      end
+    end
+    os <-.-> os2
+    style local fill:#fff,stroke:#aaa
+    style local2 fill:#fff,stroke:#aaa
+    style os fill:#fff,stroke:#aaa
+    style os2 fill:#fff,stroke:#aaa
+    style is fill:#87B8ED,stroke:#aaa
+```
 
 ## Additional Resources
 
