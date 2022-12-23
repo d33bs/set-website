@@ -18,35 +18,47 @@ __TLDR (too long, didn't read);__
 
 ## Why this matters
 
-<i class="fas fa-home" style="font-size:4em;"></i>
+```console
+IT'S DANGEROUS TO GO ALONE!
+USE ENVIRONMENT MANAGEMENT TOOLS!
+🔥 🧑‍💻 🔥
+   🛠️
+```
+
 {:.center}
 
 Software environment management is crucial because [software decay](https://en.wikipedia.org/wiki/Software_rot#Environment_change) may occur due to environmental change. If software is unable to be used due to the environment, it risks becoming meaningless to the audience. One way to think of this is as software shelter; code is unprotected and may fall victim to the elements without a home.
 
-## Local or Development Environment (Surface Layer)
+## Local Development Environment
 
-```mermaid
+<pre class="mermaid">
 flowchart BT
     local["Local Development\nEnvironment"]
     style local fill:#9FE2A6,stroke:#aaa
-```
+</pre>
+<script type="module">
+  import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+{:.center}
 
-The first layer our code typically lives in is the local development environment. This can be thought of as the surface layer. This is where code is initially written and tested by the developer.
+The first layer our code typically lives in is the local development environment. This is where code is initially written and tested by the developer using a specific language and set of dependencies.
 
-## Operating System Environment (Planetary Layer)
+## Operating System Environment
 
-```mermaid
+<pre class="mermaid">
 flowchart BT
     subgraph os [Operating System]
       local["Local Development\nEnvironment"]
     end
     style local fill:#fff,stroke:#aaa
     style os fill:#9FE2DE,stroke:#aaa
-```
+</pre>
+{:.center}
 
-## Inter-Systems Environment (Solar System Layer)
+## Inter-Systems Environment
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
     subgraph is [Inter-system]
     direction LR
@@ -63,7 +75,8 @@ flowchart LR
     style os fill:#fff,stroke:#aaa
     style os2 fill:#fff,stroke:#aaa
     style is fill:#87B8ED,stroke:#aaa
-```
+</pre>
+{:.center}
 
 ## Additional Resources
 
