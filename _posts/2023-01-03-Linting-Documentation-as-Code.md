@@ -129,8 +129,13 @@ Additional and similar resources to explore in this area:
 
 - [textlint](https://textlint.github.io/) - similar to Vale with a modular approach
 
-## Additional Resources
+## Resources
 
-Please see the following the additional resources on this topic.
+Please see the following the resources on this topic.
 
--
+- [codespell](https://github.com/codespell-project/codespell) - a code and documentation spell checker.
+- [markdownlint](https://github.com/markdownlint/markdownlint) - markdown linter.
+- [mdformat](https://github.com/executablebooks/mdformat) - another markdown linter.
+- [restructuredtext-lint](https://github.com/twolfson/restructuredtext-lint) - RST file format linter.
+- [vale](https://vale.sh/) - an editorial style linter.
+- [textlint](https://textlint.github.io/) - another editorial style linter with greater modularity.
