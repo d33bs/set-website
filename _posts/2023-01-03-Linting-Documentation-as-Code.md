@@ -45,6 +45,7 @@ readme.md:4: wokr ==> work
 readme.md:4: progess ==> progress
 
 
+
 ```
 
 _Example showing codespell detection of mispelled words_
@@ -73,10 +74,11 @@ _Example readme.md with markdown issues_
 
 ```console
 % markdownlint readme.md
-readme.md:2 MD041/first-line-heading/first-line-h1 First line in a file should be a top-level heading [Context: "## Example Readme"]
-readme.md:6:5 MD011/no-reversed-links Reversed link syntax [(link)[https://www.cuanschutz.edu/]]
-
-
+readme.md:2 MD041/first-line-heading/first-line-h1
+First line in a file should be a top-level heading
+[Context: "## Example Readme"]
+readme.md:6:5 MD011/no-reversed-links Reversed link
+syntax [(link)[https://www.cuanschutz.edu/]]
 
 ```
 
@@ -111,12 +113,12 @@ _Example readme.md with questionable editorial style_
 
 ```console
 % vale readme-example.md
- readme-example.md
- 2:12  error       Did you really mean 'Readme'?   Vale.Spelling
- 5:11  warning     'be updated' may be passive     write-good.Passive
-                   voice. Use active voice if you
-                   can.
- 5:34  warning     'very' is a weasel word!        write-good.Weasel
+readme-example.md
+2:12  error    Did you really mean 'Readme'?   Vale.Spelling
+5:11  warning  'be updated' may be passive     write-good.Passive
+               voice. Use active voice if you
+               can.
+5:34  warning  'very' is a weasel word!        write-good.Weasel
 ```
 
 _Example showing vale detection of questionable editorial style_
