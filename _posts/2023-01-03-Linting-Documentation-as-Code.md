@@ -121,7 +121,7 @@ readme-example.md
 5:34  warning  'very' is a weasel word!        write-good.Weasel
 ```
 
-_Example showing vale detection of questionable editorial style_
+_Example showing vale warnings and errors_
 {% endcapture %}
 {% include two-col.html col1=col1content col2=col2content %}
 
