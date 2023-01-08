@@ -36,6 +36,12 @@ One way to address this is through the use of [timeboxing](https://en.wikipedia.
 
 ## Objective Key Results
 
+Another non-technical challenge when it comes to software work is finding the correct metric to estimate progress without losing focus on larger goals. Making data-based decisions is a common way to achieve measurable progress and keep honest about successes. Measurements alone are flawed in their ability to judge long-term success. Be sure to take [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) into account:
+
+> "When a measure becomes a target, it ceases to be a good measure"
+
+Stated differently: when we focus only on what we measure, we may lose sight of the important goals. For example, time may be used as a work measure, but more time spent on work isn't equivalent to successful outcomes.
+
 - [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 
 ## Externalizing
