@@ -13,7 +13,7 @@ tags:
 
 __TLDR (too long, didn't read);__
 
-## Timeboxing
+## Controlling Work Expansion
 
 <pre class="mermaid">
 </pre>
@@ -29,22 +29,20 @@ Have you ever spent more time than you thought you would on a task? An adage whi
 
 The practice of writing software is not protected from this law. It may be effected by it in sometimes worse ways when considering long periods of uninterrupted programming (where we may have an inclination to pour our time into only a few items).
 
-One way to address this is through the use of [timeboxing](https://en.wikipedia.org/wiki/Timeboxing) techiques. Timeboxing sets a fixed limit to the amount of time one may spend on a specific activity. One can use timeboxing to systematically address many tasks, for example, as with the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). This time limit directly addresses Parkinson's Law and helps encourage
+One way to address this is through the use of [timeboxing](https://en.wikipedia.org/wiki/Timeboxing) techiques. Timeboxing sets a fixed limit to the amount of time one may spend on a specific activity. One can use timeboxing to systematically address many tasks, for example, as with the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). While there are many ways to apply timeboxing, Pomodoro provides a way to balance activity with short breaks and focus switches to help ensure we don't become overwhelmed.
 
 - [Wikipedia: Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law)
 - [Wikipedia: Timeboxing](https://en.wikipedia.org/wiki/Timeboxing)
 
-## Objective Key Results
+## Timeboxing Means Modularization
 
-Another non-technical challenge when it comes to software work is finding the correct metric to estimate progress without losing focus on larger goals. Making data-based decisions is a common way to achieve measurable progress and keep honest about successes. Measurements alone are flawed in their ability to judge long-term success. Be sure to take [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) into account:
+Timeboxing has an auxiliary benefit of framing your work as distinct and oftentimes smaller chunks. Creating distinct chunks of work applies for both our daily time schedule as well as code itself. This concept is more broadly called "[modularization](https://en.wikipedia.org/wiki/Modularity)" and helps to distinguish large portions of work (whether in real life or in code) as smaller and more maintainable chunks.
 
-> "When a measure becomes a target, it ceases to be a good measure"
+Breaking down large amounts of work as smaller chunks within our code helps to ensure long-term maintainability and understandability.
 
-Stated differently: when we focus only on what we measure, we may lose sight of the important goals. For example, time may be used as a work measure, but more time spent on work isn't equivalent to successful outcomes.
+## Applied Timeboxing for Software Development
 
-- [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law)
-
-## Externalizing
+The parallels between the time we give a modularized task and related code modules can work towards your benefit. For example, [Github Issues](https://github.com/features/issues) can be created to outline a timeboxed task which relates to a distinct chunk of code to be created, updated, or fixed.
 
 ## Additional Resources
 
