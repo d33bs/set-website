@@ -15,13 +15,9 @@ __TLDR (too long, didn't read);__
 
 ## Controlling Time Expansion
 
-<pre class="mermaid">
-</pre>
-<script type="module">
-  import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
-_Diagram showing..._
+![](../images/work_timebox.png)
+_Image depicting work as a creature with a timebox around it._
+{:.center}
 
 Have you ever spent more time than you thought you would on a task? An adage which helps explain this phenomenon is [Parkinson's Law](https://www.economist.com/news/1955/11/19/parkinsons-law):
 
@@ -63,16 +59,19 @@ _Modular and more understandable tasks_
 
 Breaking down large amounts of work as smaller chunks within our code helps to ensure long-term maintainability and understandability. Similarly, keeping our tasks small can help ensure our goals are achievable and understandable (to ourselves or others). Without this modularity, tasks can be impossible to achieve (subjective in nature) or very difficult to understand.
 
-## Software Development Timeboxing
-
-The parallels between the time we give a task and related code can work towards your benefit. For example, [Github Issues](https://github.com/features/issues) can be created to outline a timeboxed task which relates to a distinct chunk of code to be created, updated, or fixed. A developer can use timeboxing to help decide how much time to allocate on each issue.
+## Version Control and Timeboxing
 
 ```markdown
 # Repo Issues
-- "Prevent foo warning" - 25 minutes
-- "Prevent foo warning" - 25 minutes
+- "Prevent foo warning" - 20 minutes
+- "Remove bar feature" - 20 minutes
+- "Address baz error" - 20 minutes
 
 ```
+
+The parallels between the time we give a task and related code can work towards your benefit. For example, [Github Issues](https://github.com/features/issues) can be created to outline a timeboxed task which relates to a distinct chunk of code to be created, updated, or fixed. Once development tasks have been outlined as issues, a developer can use timeboxing to help organize how much time to allocate on each issue.
+
+Using Github Issues in this way provides a way to observe task progress associated with one or many repositories. It also increases collaborative opportunities for task sizing and description. For example, if a task looks too large to complete in a reasonable amount of time, developers may work together to break the task down into smaller modules of work.
 
 ## Additional Resources
 
