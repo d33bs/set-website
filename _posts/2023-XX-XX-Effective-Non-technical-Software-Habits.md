@@ -63,9 +63,16 @@ _Modular and more understandable tasks_
 
 Breaking down large amounts of work as smaller chunks within our code helps to ensure long-term maintainability and understandability. Similarly, keeping our tasks small can help ensure our goals are achievable and understandable (to ourselves or others). Without this modularity, tasks can be impossible to achieve (subjective in nature) or very difficult to understand.
 
-## Timeboxing Software Development
+## Software Development Timeboxing
 
-The parallels between the time we give a task and related code can work towards your benefit. For example, [Github Issues](https://github.com/features/issues) can be created to outline a timeboxed task which relates to a distinct chunk of code to be created, updated, or fixed.
+The parallels between the time we give a task and related code can work towards your benefit. For example, [Github Issues](https://github.com/features/issues) can be created to outline a timeboxed task which relates to a distinct chunk of code to be created, updated, or fixed. A developer can use timeboxing to help decide how much time to allocate on each issue.
+
+```markdown
+# Repo Issues
+- "Prevent foo warning" - 25 minutes
+- "Prevent foo warning" - 25 minutes
+
+```
 
 ## Additional Resources
 
