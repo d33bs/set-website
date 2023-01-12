@@ -5,6 +5,10 @@ member: dave-bunten
 tags:
   - tip-of-the-week
   - software
+  - timeboxing
+  - productivity
+  - modularization
+  - projectmanagement
 ---
 
 # Tip of the Week: Effective Non-technical Software Habits
@@ -12,28 +16,26 @@ tags:
 > Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
 __TLDR (too long, didn't read);__
+Use timeboxing techniques such as [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help [modularize](https://en.wikipedia.org/wiki/Modularity) your software work to ensure you don't fall victim to [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law). Timeboxing may also map well to [Github Issues](https://github.com/features/issues), which allows your software tasks to be further aligned, documented, and chunked in collaboration with others.
 
-## Controlling Time Expansion
+## Controlling Work Time Expansion
 
-![](../images/work_timebox.png)
-_Image depicting work as a creature with a timebox around it._
+{% include figure.html image="images/work_timebox.png" caption="Image depicting work as a creature with a timebox around it."  %}
 {:.center}
 
 Have you ever spent more time than you thought you would on a task? An adage which helps explain this phenomenon is [Parkinson's Law](https://www.economist.com/news/1955/11/19/parkinsons-law):
 
 >"... work expands so as to fill the time available for its completion."
 
-The practice of writing software is not protected from this "law". It may be effected by it in sometimes worse ways when considering long periods of uninterrupted programming (where we may have an inclination to pour our time into only a few items).
+The practice of writing software is not protected from this "law". It may be effected by it in sometimes worse ways when considering long periods of uninterrupted programming (where we may have an inclination to forget productive goals).
 
 One way to address this is through the use of [timeboxing](https://en.wikipedia.org/wiki/Timeboxing) techiques. Timeboxing sets a fixed limit to the amount of time one may spend on a specific activity. One can use timeboxing to systematically address many tasks, for example, as with the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). While there are many ways to apply timeboxing, Pomodoro provides a way to balance activity with short breaks and focus switches to help ensure we don't become overwhelmed.
-
-- [Wikipedia: Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law)
-- [Wikipedia: Timeboxing](https://en.wikipedia.org/wiki/Timeboxing)
-- [Wikipedia: Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
 ## Timeboxing Means Modularization
 
 Timeboxing has an auxiliary benefit of framing your work as objective and oftentimes smaller chunks (we have to know what we're timeboxing in order to use this technique). Creating distinct chunks of work applies for both our daily time schedule as well as code itself. This concept is more broadly called "[modularization](https://en.wikipedia.org/wiki/Modularity)" and helps to distinguish large portions of work (whether in real life or in code) as smaller and more maintainable chunks.
+
+{% capture col1content %}
 
 ```markdown
 # Goals
@@ -46,6 +48,9 @@ Timeboxing has an auxiliary benefit of framing your work as objective and oftent
 
 _Vague and possibly large task_
 
+{% endcapture %}
+{% capture col2content %}
+
 ```markdown
 # Goals
 - Finish writing paper
@@ -56,6 +61,9 @@ _Vague and possibly large task_
 ```
 
 _Modular and more understandable tasks_
+{% endcapture %}
+
+{% include two-col.html col1=col1content col2=col2content %}
 
 Breaking down large amounts of work as smaller chunks within our code helps to ensure long-term maintainability and understandability. Similarly, keeping our tasks small can help ensure our goals are achievable and understandable (to ourselves or others). Without this modularity, tasks can be impossible to achieve (subjective in nature) or very difficult to understand.
 
@@ -69,10 +77,18 @@ Breaking down large amounts of work as smaller chunks within our code helps to e
 
 ```
 
+_List of example version control repository issues with associated time duration._
+{:.center}
+
 The parallels between the time we give a task and related code can work towards your benefit. For example, [Github Issues](https://github.com/features/issues) can be created to outline a timeboxed task which relates to a distinct chunk of code to be created, updated, or fixed. Once development tasks have been outlined as issues, a developer can use timeboxing to help organize how much time to allocate on each issue.
 
 Using Github Issues in this way provides a way to observe task progress associated with one or many repositories. It also increases collaborative opportunities for task sizing and description. For example, if a task looks too large to complete in a reasonable amount of time, developers may work together to break the task down into smaller modules of work.
 
 ## Additional Resources
 
--
+- [Wikipedia: Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law)
+- [Wikipedia: Timeboxing](https://en.wikipedia.org/wiki/Timeboxing)
+- [Wikipedia: Timeblocking](https://en.wikipedia.org/wiki/Timeblocking) Additional similar notes on time management.
+- [Wikipedia: Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+- [Wikipedia: Modularity](https://en.wikipedia.org/wiki/Modularity)
+- [Github Issues](https://github.com/features/issues)
