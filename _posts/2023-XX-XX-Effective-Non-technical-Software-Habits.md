@@ -16,7 +16,7 @@ tags:
 > Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
 __TLDR (too long, didn't read);__
-Use timeboxing techniques such as [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) to help [modularize](https://en.wikipedia.org/wiki/Modularity) your software work to ensure you don't fall victim to [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law). Timeboxing may also map well to [Github Issues](https://github.com/features/issues), which allows your software tasks to be further aligned, documented, and chunked in collaboration with others.
+Use timeboxing techniques such as [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) or [52/17](https://en.wikipedia.org/wiki/52/17_rule) to help [modularize](https://en.wikipedia.org/wiki/Modularity) your software work to ensure you don't fall victim to [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law). Timeboxing may also map well to [Github Issues](https://github.com/features/issues), which allows your software tasks to be further aligned, documented, and chunked in collaboration with others.
 
 ## Controlling Work Time Expansion
 
@@ -29,7 +29,7 @@ Have you ever spent more time than you thought you would on a task? An adage whi
 
 The practice of writing software is not protected from this "law". It may be effected by it in sometimes worse ways when considering long periods of uninterrupted programming (where we may have an inclination to forget productive goals).
 
-One way to address this is through the use of [timeboxing](https://en.wikipedia.org/wiki/Timeboxing) techiques. Timeboxing sets a fixed limit to the amount of time one may spend on a specific activity. One can use timeboxing to systematically address many tasks, for example, as with the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). While there are many ways to apply timeboxing, Pomodoro provides a way to balance activity with short breaks and focus switches to help ensure we don't become overwhelmed.
+One way to address this is through the use of [timeboxing](https://en.wikipedia.org/wiki/Timeboxing) techiques. Timeboxing sets a fixed limit to the amount of time one may spend on a specific activity. One can use timeboxing to systematically address many tasks, for example, as with the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) or [52/17 rule](https://en.wikipedia.org/wiki/52/17_rule). While there are many ways to apply timeboxing, Pomodoro provides a way to balance activity with short breaks and focus switches to help ensure we don't become overwhelmed.
 
 ## Timeboxing Means Modularization
 
@@ -84,11 +84,20 @@ The parallels between the time we give a task and related code can work towards 
 
 Using Github Issues in this way provides a way to observe task progress associated with one or many repositories. It also increases collaborative opportunities for task sizing and description. For example, if a task looks too large to complete in a reasonable amount of time, developers may work together to break the task down into smaller modules of work.
 
+## Be Kind to Yourself: Take Breaks
+
+While timeboxing is often a conversation about how to be more productive, it's also worth remembering: __take breaks to be kind to yourself and more effective__. Many scientific studies and thought leaders have the shown the importance of taking a break.
+
+- <https://www.sciencedaily.com/releases/2011/02/110208131529.htm>
+- <https://hbr.org/2014/08/schedule-a-15-minute-break-before-you-burn-out>
+- <https://pubmed.ncbi.nlm.nih.gov/24749966/>
+
 ## Additional Resources
 
-- [Wikipedia: Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law)
-- [Wikipedia: Timeboxing](https://en.wikipedia.org/wiki/Timeboxing)
-- [Wikipedia: Timeblocking](https://en.wikipedia.org/wiki/Timeblocking) Additional similar notes on time management.
-- [Wikipedia: Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
-- [Wikipedia: Modularity](https://en.wikipedia.org/wiki/Modularity)
+- [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law)
+- [Timeboxing](https://en.wikipedia.org/wiki/Timeboxing)
+- [Timeblocking](https://en.wikipedia.org/wiki/Timeblocking) Additional similar notes on time management.
+- [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+- [52/17 Rule](https://en.wikipedia.org/wiki/52/17_rule)
+- [Modularity](https://en.wikipedia.org/wiki/Modularity)
 - [Github Issues](https://github.com/features/issues)
