@@ -86,11 +86,11 @@ Using Github Issues in this way provides a way to observe task progress associat
 
 ## Be Kind to Yourself: Take Breaks
 
-While timeboxing is often a conversation about how to be more productive, it's also worth remembering: __take breaks to be kind to yourself and more effective__. Many scientific studies and thought leaders have the shown the importance of taking a break.
+While timeboxing is often a conversation about how to be more productive, it's also worth remembering: __take breaks to be kind to yourself and more effective__. Some studies and thought leadership have the shown that taking breaks may be necessary to avoid performance decreases and impacts to your health. There's also some indication that taking breaks may lead to better work. See below for just a few examples:
 
-- <https://www.sciencedaily.com/releases/2011/02/110208131529.htm>
-- <https://hbr.org/2014/08/schedule-a-15-minute-break-before-you-burn-out>
-- <https://pubmed.ncbi.nlm.nih.gov/24749966/>
+- [The Importance of Taking Breaks](https://thewellbeingthesis.org.uk/foundations-for-success/importance-of-taking-breaks-and-having-other-interests/)
+- [Brief and rare mental “breaks” keep you focused: Deactivation and reactivation of task goals preempt vigilance decrements](https://www.sciencedirect.com/science/article/pii/S0010027710002994?via%3Dihub)
+- [Give your ideas some legs: the positive effect of walking on creative thinking](https://pubmed.ncbi.nlm.nih.gov/24749966/)
 
 ## Additional Resources
 
