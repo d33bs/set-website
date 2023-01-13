@@ -1,5 +1,5 @@
 ---
-title: "Tip of the Week: Effective Non-technical Software Habits"
+title: "Tip of the Week: Timeblock Your Software Work"
 author: Dave Bunten
 member: dave-bunten
 tags:
@@ -11,7 +11,7 @@ tags:
   - projectmanagement
 ---
 
-# Tip of the Week: Effective Non-technical Software Habits
+# Tip of the Week: Timeblock Your Software Work
 
 > Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
