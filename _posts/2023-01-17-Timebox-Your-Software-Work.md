@@ -67,7 +67,7 @@ _Modular and more understandable tasks_
 
 {% include two-col.html col1=col1content col2=col2content %}
 
-Breaking down large amounts of work as smaller chunks within our code helps to ensure long-term maintainability and understandability. Similarly, keeping our tasks small can help ensure our goals are achievable and understandable (to ourselves or others). Without this modularity, tasks can be impossible to achieve (subjective in nature) or very difficult to understand.
+Breaking down large amounts of work as smaller chunks within our code helps to ensure long-term maintainability and understandability. Similarly, keeping our tasks small can help ensure our goals are achievable and understandable (to ourselves or others). Without this modularity, tasks can be impossible to achieve (subjective in nature) or very difficult to understand. Stated differently, taking many small steps can lead to a big change in an organized, oftentimes less exhausting way ([related graphic](https://www.fosslien.com/liz-fosslien-the-power-of-small-steps)).
 
 ## Version Control and Timeboxing
 
