@@ -14,7 +14,7 @@ tags:
 
 # Tip of the Week: Timebox Your Software Work
 
-> Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
+> Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. Views expressed in the content belong to the content creators and not the organization, its affiliates, or employees. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
 Programming often involves long periods of problem solving which can sometimes lead to unproductive or exhausting outcomes. This article covers one way to avoid less productive time expense or protect yourself from overexhaustion through a technique called "timeboxing" (also sometimes referenced as "timeblocking").
 
