@@ -19,7 +19,7 @@ Linting, or [static analysis](https://en.wikipedia.org/wiki/Static_program_analy
 
 ## Automated Checks
 
-Lintr can be incorporated into automated checks to help make sure linting (or other steps) are always used with new code. One tool which can help with this is [pre-commit], which acts as both a local development tool in addition to providing observability within source control (more on this later).
+Lintr can be incorporated into automated checks to help make sure linting (or other steps) are always used with new code. One tool which can help with this is [pre-commit](https://pre-commit.com/), which acts as both a local development tool in addition to providing observability within source control (more on this later). Using pre-commit locally
 
 ## Continuous and Observable Testing
 
