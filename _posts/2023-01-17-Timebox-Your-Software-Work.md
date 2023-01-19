@@ -30,7 +30,7 @@ Have you ever spent more time than you thought you would on a task? An adage whi
 
 >"... work expands so as to fill the time available for its completion."
 
-The practice of writing software is not protected from this "law". It may be effected by it in sometimes worse ways when considering long periods of uninterrupted programming (where we may have an inclination to forget productive goals).
+The practice of writing software is not protected from this "law". It may be affected by it in sometimes worse ways when considering long periods of uninterrupted programming (where we may have an inclination to forget productive goals).
 
 One way to address this is through the use of [timeboxing](https://en.wikipedia.org/wiki/Timeboxing) techiques. Timeboxing sets a fixed limit to the amount of time one may spend on a specific activity. One can use timeboxing to systematically address many tasks, for example, as with the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) or [52/17 rule](https://en.wikipedia.org/wiki/52/17_rule). While there are many ways to apply timeboxing, Pomodoro provides a way to balance activity with short breaks and focus switches to help ensure we don't become overwhelmed.
 
@@ -89,7 +89,7 @@ Using Github Issues in this way provides a way to observe task progress associat
 
 ## Be Kind to Yourself: Take Breaks
 
-While timeboxing is often a conversation about how to be more productive, it's also worth remembering: __take breaks to be kind to yourself and more effective__. Some studies and thought leadership have the shown that taking breaks may be necessary to avoid performance decreases and impacts to your health. There's also some indication that taking breaks may lead to better work. See below for just a few examples:
+While timeboxing is often a conversation about how to be more productive, it's also worth remembering: __take breaks to be kind to yourself and more effective__. Some studies and thought leadership have shown that taking breaks may be necessary to avoid performance decreases and impacts to your health. There's also some indication that taking breaks may lead to better work. See below for just a few examples:
 
 - [The Importance of Taking Breaks](https://thewellbeingthesis.org.uk/foundations-for-success/importance-of-taking-breaks-and-having-other-interests/)
 - [Brief and rare mental “breaks” keep you focused: Deactivation and reactivation of task goals preempt vigilance decrements](https://www.sciencedirect.com/science/article/pii/S0010027710002994?via%3Dihub)
