@@ -11,7 +11,10 @@ tags:
 
 > Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
+This article covers using the software technique of linting on R code in order to improve code quality, development velocity, and collaboration.
+
 __TLDR (too long, didn't read);__
+Use software linting ([static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)) practices on your R code with existing packages [`lintr`](https://github.com/r-lib/lintr) and [`styler`](https://github.com/r-lib/styler) (among others). These linters may be applied using [pre-commit](https://pre-commit.com) in your local development environment or as continuous checks using for example [Github Actions](https://docs.github.com/en/actions).
 
 ## Treating R as Software
 
@@ -19,7 +22,7 @@ __TLDR (too long, didn't read);__
 
 _([R-Project: What is R?](https://www.r-project.org/about.html))_
 
-The [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)) is sometimes not treated like software. This treatment can sometimes lead to common issues in development which are experienced in other languages. Addressing R as software enables developers to enhance their work by taking benefit from existing concepts applied to many other languages.
+The [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)) is sometimes treated as _only_ a statistics system instead of software. This treatment can sometimes lead to common issues in development which are experienced in other languages. Addressing R as software enables developers to enhance their work by taking benefit from existing concepts applied to many other languages.
 
 ## Linting with R
 
@@ -43,4 +46,11 @@ Pre-commit provides [an example Github Action](https://github.com/pre-commit/act
 
 Please see the following the resources on this topic.
 
--
+- [R programming language](https://en.wikipedia.org/wiki/R_(programming_language))
+- [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)
+- [R package: lintr](https://github.com/r-lib/lintr)
+- [R package: styler](https://github.com/r-lib/styler)
+- [pre-commit](https://pre-commit.com/)
+- [Example of pre-commit checks with R](https://github.com/lorenzwalthert/precommit)
+- [Github Actions](https://docs.github.com/en/actions)
+- [an example Github Action](https://github.com/pre-commit/action)
