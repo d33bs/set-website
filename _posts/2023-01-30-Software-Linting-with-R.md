@@ -30,11 +30,18 @@ The [R programming language](https://en.wikipedia.org/wiki/R_(programming_langua
 
 ## Linting with R
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
   write[Write R code] --> |check| check[Check code with linters]
   check --> |revise| write
-```
+</pre>
+<script type="module">
+  import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+_Workflow loop depicting writing R code and revising with linters._
+{:.center}
 
 Software linting, or [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis), is one way to ensure a minimum level of code quality without writing new tests. Linting checks how your code is structured without running it to make sure it abides common language paradigms and logical structures. Using linting tools allows a developer to gain quick insights about their code before it is viewed or used by others.
 
@@ -42,7 +49,7 @@ One way to lint your R code is by using the [`lintr`](https://github.com/r-lib/l
 
 ## Automated Linting Checks with R
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
   subgraph development
     write
@@ -53,10 +60,13 @@ flowchart LR
     lintr
     styler
   end
-  check <-.- linters 
+  check <-.- linters
   write[Write R code] --> |check| check[Check code with pre-commit]
   check --> |revise| write
-```
+</pre>
+
+_Workflow showing development with pre-commit using multiple linters._
+{:.center}
 
 `lintr` and `styler` can be incorporated into automated checks to help make sure linting (or other steps) are always used with new code. One tool which can help with this is [pre-commit](https://pre-commit.com/), which acts as both a local development tool in addition to providing observability within source control (more on this later).
 
@@ -64,7 +74,7 @@ Using pre-commit locally enables quick feedback loops using one or many checkers
 
 ## Continuous and Observable Testing for R
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
   subgraph development [local development]
     direction LR
@@ -81,7 +91,10 @@ flowchart LR
   check --> commit[commit + push]
   commit --> |optional trigger| action
   check -.-> |perform same checks| action
-```
+</pre>
+
+_Workflow showing pre-commit used as continuous testing tool with Gtihub._
+{:.center}
 
 Pre-commit linting checks can also be incorporated into [continuous testing](https://en.wikipedia.org/wiki/Continuous_testing) performed on your repository. One way to do this is using [Github Actions](https://docs.github.com/en/actions). Github Actions provides a programmatic way to specify automatic steps taken as changes occur to a repository.
 
