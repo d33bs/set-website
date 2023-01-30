@@ -18,7 +18,7 @@ tags:
 This article covers using the software technique of linting on R code in order to improve code quality, development velocity, and collaboration.
 
 __TLDR (too long, didn't read);__
-Use software linting ([static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)) practices on your R code with existing packages [`lintr`](https://github.com/r-lib/lintr) and [`styler`](https://github.com/r-lib/styler) (among others). These linters may be applied using [pre-commit](https://pre-commit.com) in your local development environment or as continuous checks using for example [Github Actions](https://docs.github.com/en/actions).
+Use software linting ([static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)) practices on your R code with existing packages [`lintr`](https://github.com/r-lib/lintr) and [`styler`](https://github.com/r-lib/styler) (among others). These linters may be applied using [pre-commit](https://pre-commit.com) in your local development environment or as [continuous tests](https://en.wikipedia.org/wiki/Continuous_testing) using for example [Github Actions](https://docs.github.com/en/actions).
 
 ## Treating R as Software
 
