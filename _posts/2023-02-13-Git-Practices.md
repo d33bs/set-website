@@ -44,6 +44,11 @@ _An example instructor and student assignment workflow._
 ## Git Branching
 
 ```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'default' , 'themeVariables': {
+      'git0': '#4F46E5',
+      'git1': '#10B981',
+      'gitBranchLabel1': '#ffffff'
+} } }%%
     gitGraph
        commit id: "..."
        commit id: "opened"
@@ -70,6 +75,11 @@ Reference the following commands or steps to create a git branch for your reposi
 ## Reviews and Merging
 
 ```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'default' , 'themeVariables': {
+      'git0': '#6366F1',
+      'git1': '#10B981',
+      'gitBranchLabel1': '#ffffff'
+} } }%%
     gitGraph
        commit id: "..."
        commit id: "opened"
