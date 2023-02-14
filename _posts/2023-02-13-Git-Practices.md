@@ -1,5 +1,5 @@
 ---
-title: "Tip of the Week: Git Practices"
+title: "Tip of the Week: Branch, Merge, and Learn"
 author: Dave Bunten
 member: dave-bunten
 tags:
@@ -8,41 +8,40 @@ tags:
 
 ---
 
-# Tip of the Week: Git Practices
+# Tip of the Week: Branch, Merge, and Learn
 
 > Each week we seek to provide a software tip of the week geared towards helping you achieve your software goals. Views expressed in the content belong to the content creators and not the organization, its affiliates, or employees. If you have any software questions or suggestions for an upcoming tip of the week, please don’t hesitate to reach out to #software-engineering on Slack or email DBMISoftwareEngineering at olucdenver.onmicrosoft.com
 
 __TLDR (too long, didn't read);__
 
-## Strengthening Our Knowledge
+## Coursework and Branches
 
 ```mermaid
 flowchart LR
-  subgraph Student
-    direction LR
-    work["completed\nassignment"]
-  end
-  subgraph Course
+ subgraph Course
     direction LR
     open["open\nassignment"]
     turn_in["review\nassignment"]
   end
+  subgraph Student ["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student"]
+    direction LR
+    work["completed\nassignment"]
+  end
+  open -.-> turn_in
   open --> |works towards| work
   work --> |seeks review| turn_in
-  open -.-> turn_in
+  
 ```
 
 _An example instructor and student assignment workflow._
 
-[Git branching](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) practices may be simpler to understand in context with similar workflows from real life. Consider a scenario within an educational course where an assignment is made available to a student.
+[Git branching](https://www.atlassian.com/git/tutorials/using-branches) practices may be understood in context with similar workflows from real life. Consider a scenario within an educational course where an assignment is made available to a student. In addition to the steps above, it's important to think about _why_ this pattern is beneficial:
 
-Similarly, it's important to think about _why_ this pattern exists in the context of technical work based around the same:
-
-- Completing an assignment allows us as social beings to present new findings which enable learning and amalgamation of additional ideas from others.
-- On their own, our ideas without input could be interpreted as alone, unshared, and incomplete.
+- Completing an assignment allows us as social, inter-dependent beings to present new findings which enable learning and amalgamation of additional ideas from others.
+- On their own, our ideas without input could be interpreted as alone, disconnected, and incomplete.
 - The timebound nature of assignments enables us to practice some form of [timeboxing]() so as to minimize tasks which may take too much time.
 
-## Branching
+## Git Branching
 
 ```mermaid
     gitGraph
@@ -56,9 +55,10 @@ Similarly, it's important to think about _why_ this pattern exists in the contex
 
 _An example git diagram showing student branch being merged with main after review._
 
-Branching allows us to make consistent and well decribed changes based on what's already happened without impacting others work in the meantime. The course assignment workflow can help provide context with how branching may work within git. The diagram above shows a `student` branch based off of the `main` branch. The `main` branch can be thought of as the "course", or the primary place where all others collaborate, including where you'd seek feedback from your peers or an instructor (especially when seeking to merge, as mentioned below). When the `student` branch is created, we bring into it everything we know from `main` (the course) so far.
+Following the course assignment workflow, the diagram above shows a `student` branch based off of the `main` branch. When the `student` branch is created, we bring into it everything we know from `main` (the course) so far in the form of [commits](https://github.com/git-guides/git-commit), or groups of changes to various files.
+[Branching](https://github.com/git-guides#create-a-branch) allows us to make consistent and well described changes based on what's already happened without impacting others work in the meantime.
 
-Commits represent small chunks of a cohesive idea which will eventually be brought back to the commons within `main`. To this effect, keep in mind the saying _festina lente_ or __"make haste slowly"__ ([reference](https://en.wikipedia.org/wiki/Festina_lente)). In other words, it may pay to be consistent with small, gradual commits to avoid rushing completion.
+> ℹ️ __Quick notes on commits__: Commits on any branch represent small chunks of a cohesive idea which will eventually be brought to `main`. Keep in mind the saying _festina lente_ or __"make haste slowly"__ ([reference](https://en.wikipedia.org/wiki/Festina_lente)). In other words, it may be beneficial to be consistent with small, gradual commits to avoid rushing completion.
 
 Reference the following commands or steps to create a git branch for your repository.
 
@@ -82,7 +82,7 @@ Reference the following commands or steps to create a git branch for your reposi
 
 ```
 
- After the `completed` commit takes place on the student branch, a merge is performed to pull the changes into the "main" branch.
+ The diagram above depicts a merge from the `student` branch to pull the changes into the `main` branch, simulating an assignment being returned for review within a course. While merges may be forced without review, it's a best practice to ask others for a [Pull Request (PR) Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (also known as a[Merge Request (MR)](https://docs.gitlab.com/ee/user/project/merge_requests/) on some systems). Doing this provides a chance to make revisions before code changes are "finalized" within the `main` branch.
 
 ## Resources
 
