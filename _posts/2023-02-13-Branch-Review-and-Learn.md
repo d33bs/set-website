@@ -9,7 +9,7 @@ tags:
   - branching
   - pull-requests
   - merging
-excerpt: "Use git branching techniques to segment the completion of programming tasks, gradually and consistently committing small changes (practicing festina lente or "make haste, slowly"). When a group of small changes are ready from branches, request pull request reviews and take advantage of comments to continuously improve the work. Prepare for a branch merge after review by deciding which merge strategy is appropriate and automating merge requirements with branch protection rules."
+excerpt: 'Use git branching techniques to segment the completion of programming tasks, gradually and consistently committing small changes (practicing festina lente or "make haste, slowly"). When a group of small changes are ready from branches, request pull request reviews and take advantage of comments to continuously improve the work. Prepare for a branch merge after review by deciding which merge strategy is appropriate and automating merge requirements with branch protection rules.'
 ---
 
 # Tip of the Week: Branch, Review, and Learn
@@ -134,3 +134,11 @@ Changes may be made within the `assignment` branch until the work is in a state 
 > - __Decide which merge strategy is appropriate (there are many!):__ There are many [merge strategies within Github](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github) (merge commits, squash merges, and rebase merging). Take time to understand them and choose which one works best.
 > - __Consider using branch protection to automate merge requirements:__ The `main` or other branches may be "protected" against merges using [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches). These rules can require reviewer approvals or automatic status checks to pass before changes may be merged.
 > - __Use merge queuing to manage multiple PR's:__ When there are many unmerged PR's, it can sometimes be difficult to document and ensure each are merged in a desired sequence. Consider using [merge queues](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue) to help with this process.
+
+## Additional Resources
+
+The links below may provide additional guidance on using these git features.
+
+- [Github: Git Guide](https://github.com/git-guides)
+- [Atlassian: What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [Git Lab: Git](https://docs.gitlab.com/ee/topics/git/)
