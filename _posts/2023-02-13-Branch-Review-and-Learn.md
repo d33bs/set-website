@@ -103,7 +103,7 @@ Following the course assignment workflow, the diagram above shows an in-progress
 _An example git diagram showing assignment branch being merged with main after a review._
 {:.center}
 
-The diagram above depicts a merge from the `assignment` branch to pull the changes into the `main` branch, simulating an assignment being returned for review within a course. While merges may be forced without review, it's a best practice to ask others for a [Pull Request (PR) Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (also known as a [Merge Request (MR)](https://docs.gitlab.com/ee/user/project/merge_requests/) on some systems). Doing this provides a chance to make revisions before code changes are "finalized" within the `main` branch.
+The diagram above depicts a merge from the `assignment` branch to pull the changes into the `main` branch, simulating an assignment being returned for review within a course. While merges may be forced without review, it's a best practice create a [Pull Request (PR) Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (also known as a [Merge Request (MR)](https://docs.gitlab.com/ee/user/project/merge_requests/) on some systems) and then ask other members of your team to review it. Doing this provides a chance to make revisions before code changes are "finalized" within the `main` branch.
 
 > Github provides special tools for reviews which can assist both the author and reviewer:
 >
