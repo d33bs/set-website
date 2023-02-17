@@ -20,7 +20,9 @@ Git provides a feature called [branching](https://git-scm.com/docs/git-branch) w
 __Please note:__ the content below represents one opinion in a larger space of Git workflow concepts (it's not perfect!). Developer cultures may vary on these topics; be sure to acknowledge people and culture over exclusive or absolute dedication to what is found below.
 
 __TLDR (too long, didn't read);__
+<!-- excerpt start -->
 Use [git branching techniques](https://www.atlassian.com/git/tutorials/using-branches) to segment the completion of programming tasks, gradually and consistently committing small changes (practicing [_festina lente_ or "make haste, slowly"](https://en.wikipedia.org/wiki/Festina_lente)). When a group of small changes are ready from branches, request [pull request reviews](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and take advantage of [comments](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) to [continuously improve](https://en.wikipedia.org/wiki/Continual_improvement_process) the work. Prepare for a branch [merge](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) after review by deciding [which merge strategy](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github) is appropriate and automating merge requirements with [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches).
+<!-- excerpt end -->
 
 ## Concept: Coursework Branching
 
