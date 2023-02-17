@@ -136,8 +136,9 @@ Changes may be made within the `assignment` branch until the work is in a state 
 
 ## Additional Resources
 
-The links below may provide additional guidance on using these git features.
+The links below may provide additional guidance on using these git features, including in-depth coverage of various features and related configuration.
 
+- [Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/)
 - [Github: Git Guide](https://github.com/git-guides)
 - [Atlassian: What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [Git Lab: Git](https://docs.gitlab.com/ee/topics/git/)
