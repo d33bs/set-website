@@ -32,7 +32,7 @@ flowchart LR
     open["open\nassignment"]
     turn_in["review\nassignment"]
   end
-  subgraph Learner ["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learner"]
+  subgraph Student ["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student"]
     direction LR
     work["completed\nassignment"]
   end
@@ -45,10 +45,10 @@ flowchart LR
   mermaid.initialize({ startOnLoad: true });
 </script>
 
-_An example course and learner assignment workflow._
+_An example course and student assignment workflow._
 {:.center}
 
-[Git branching](https://www.atlassian.com/git/tutorials/using-branches) practices may be understood in context with similar workflows from real life. Consider a scenario within an educational course where an assignment is made available to a learner. In addition to the steps shown in the diagram above, it's important to think about _why_ this pattern is beneficial:
+[Git branching](https://www.atlassian.com/git/tutorials/using-branches) practices may be understood in context with similar workflows from real life. Consider a student taking a course, where an assignment is given to them to complete. In addition to the steps shown in the diagram above, it's important to think about _why_ this pattern is beneficial:
 
 - Completing an assignment allows us as social, inter-dependent beings to present new findings which enable learning and amalgamation of additional ideas from others.
 - The timebound nature of assignments enables us to practice some form of [timeboxing](https://cu-dbmi.github.io/set-website/2023/01/17/Timebox-Your-Software-Work.html) so as to minimize tasks which may take too much time.
@@ -65,16 +65,16 @@ _An example course and learner assignment workflow._
     gitGraph
        commit id: "..."
        commit id: "opened"
-       branch learner
-       checkout learner
+       branch assignment
+       checkout assignment
        commit id: "completed"
        checkout main
 </pre>
 
-_An example git diagram showing learner branch based off main._
+_An example git diagram showing assignment branch based off main._
 {:.center}
 
-Following the course assignment workflow, the diagram above shows an in-progress `learner` branch based off of the `main` branch. When the `learner` branch is created, we bring into it everything we know from `main` (the course) so far in the form of [commits](https://github.com/git-guides/git-commit), or groups of changes to various files. [Branching](https://github.com/git-guides#create-a-branch) allows us to make consistent and well described changes based on what's already happened without impacting others work in the meantime.
+Following the course assignment workflow, the diagram above shows an in-progress `assignment` branch based off of the `main` branch. When the `assignment` branch is created, we bring into it everything we know from `main` (the course) so far in the form of [commits](https://github.com/git-guides/git-commit), or groups of changes to various files. [Branching](https://github.com/git-guides#create-a-branch) allows us to make consistent and well described changes based on what's already happened without impacting others work in the meantime.
 
 > Branching best practices:
 >
@@ -93,17 +93,17 @@ Following the course assignment workflow, the diagram above shows an in-progress
     gitGraph
        commit id: "..."
        commit id: "opened"
-       branch learner
-       checkout learner
+       branch assignment
+       checkout assignment
        commit id: "completed"
        checkout main
-       merge learner id: "reviewed"
+       merge assignment id: "reviewed"
 </pre>
 
-_An example git diagram showing learner branch being merged with main after a review._
+_An example git diagram showing assignment branch being merged with main after a review._
 {:.center}
 
-The diagram above depicts a merge from the `learner` branch to pull the changes into the `main` branch, simulating an assignment being returned for review within a course. While merges may be forced without review, it's a best practice to ask others for a [Pull Request (PR) Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (also known as a [Merge Request (MR)](https://docs.gitlab.com/ee/user/project/merge_requests/) on some systems). Doing this provides a chance to make revisions before code changes are "finalized" within the `main` branch.
+The diagram above depicts a merge from the `assignment` branch to pull the changes into the `main` branch, simulating an assignment being returned for review within a course. While merges may be forced without review, it's a best practice to ask others for a [Pull Request (PR) Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (also known as a [Merge Request (MR)](https://docs.gitlab.com/ee/user/project/merge_requests/) on some systems). Doing this provides a chance to make revisions before code changes are "finalized" within the `main` branch.
 
 > Github provides special tools for reviews which can assist both the author and reviewer:
 >
@@ -124,10 +124,10 @@ The diagram above depicts a merge from the `learner` branch to pull the changes 
        commit id: "...."
 </pre>
 
-_An example git diagram showing the main branch after the learner branch has been merged (and removed)._
+_An example git diagram showing the main branch after the assignment branch has been merged (and removed)._
 {:.center}
 
-Changes may be made within the `learner` branch until the work is in a state where the authors and reviewers are satisfied. At this point, the branch changes may be [merged](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) into `main`. Approvals are sometimes provided informally (for ex., with a comment: "LGTM (looks good to me)!") or explicitly (for ex., [approvals within Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews)) to indicate or enable branch merge readiness . After the merge, changes may continue to be made in a similar way (perhaps accounting for concurrently branched work elsewhere). Generally, a merged branch may be removed afterwards to help maintain an organized working environment (see [Github PR branch removal](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/deleting-and-restoring-branches-in-a-pull-request)).
+Changes may be made within the `assignment` branch until the work is in a state where the authors and reviewers are satisfied. At this point, the branch changes may be [merged](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) into `main`. Approvals are sometimes provided informally (for ex., with a comment: "LGTM (looks good to me)!") or explicitly (for ex., [approvals within Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews)) to indicate or enable branch merge readiness . After the merge, changes may continue to be made in a similar way (perhaps accounting for concurrently branched work elsewhere). Generally, a merged branch may be removed afterwards to help maintain an organized working environment (see [Github PR branch removal](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/deleting-and-restoring-branches-in-a-pull-request)).
 
 > Github provides special tools for merging:
 >
