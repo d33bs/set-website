@@ -9,7 +9,6 @@ tags:
   - branching
   - pull-requests
   - merging
-excerpt: 'Use git branching techniques to segment the completion of programming tasks, gradually and consistently committing small changes (practicing festina lente or "make haste, slowly"). When a group of small changes are ready from branches, request pull request reviews and take advantage of comments to continuously improve the work. Prepare for a branch merge after review by deciding which merge strategy is appropriate and automating merge requirements with branch protection rules.'
 ---
 
 # Tip of the Week: Branch, Review, and Learn
