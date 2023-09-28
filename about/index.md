@@ -65,7 +65,7 @@ That said, we can still provide partial support as a consulting body, a reposito
 
 {%
   include button.html
-  link="portfolio"
+  link="https://github.com/CU-DBMI/set-intake"
   text="Request Support"
   icon="fas fa-handshake-angle"
   style="button"
