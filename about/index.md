@@ -63,7 +63,13 @@ That said, we can still provide partial support as a consulting body, a reposito
 
 ## Contact
 
-We are working on a more formal way to submit requests for support, but in the meantime, please contact [Audrey Wen](mailto:audrey.wen@cuanschutz.edu) as an entrypoint for requesting work from the Software Engineering Team.
+{%
+  include button.html
+  link="portfolio"
+  text="Request Support"
+  icon="fas fa-handshake-angle"
+  style="button"
+%}
 
 For general questions or technical help, we also have weekly open-office hours, Thursdays at 2:00 PM Mountain Time in the following Zoom room.
 Feel free to stop by!
