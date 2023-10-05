@@ -63,6 +63,10 @@ That said, we can still provide partial support as a consulting body, a reposito
 
 ## Contact
 
+### Request Support
+
+Start here to establish a project and work with us.
+
 {%
   include button.html
   link="https://github.com/CU-DBMI/set-intake"
@@ -70,6 +74,24 @@ That said, we can still provide partial support as a consulting body, a reposito
   icon="fas fa-handshake-angle"
   style="button"
 %}
+
+### Book a Meeting
+
+Schedule a meeting with us about an **established project**.
+If you haven't met with us yet on this particular project, please start by **requesting support above**.
+
+In the notes field, please specify which team members are optional/required for this meeting.
+Also list any additional emails, and we'll forward the calendar invite to them.
+
+{%
+  include button.html
+  link="https://outlook.office365.com/owa/calendar/SoftwareEngineeringTeam@olucdenver.onmicrosoft.com/bookings/"
+  text="Book a Meeting"
+  icon="fas fa-calendar"
+  style="button"
+%}
+
+### Chat
 
 For general questions or technical help, we also have weekly open-office hours, Thursdays at 2:00 PM Mountain Time in the following Zoom room.
 Feel free to stop by!
@@ -89,6 +111,8 @@ function encode(string) {
     .join("");
 }
 -->
+
+You can also come to the Zoom room if you're unsure about something with the _requesting support process mentioned above_.
 
 ## The Team
 
