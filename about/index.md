@@ -80,9 +80,6 @@ Start here to establish a project and work with us.
 Schedule a meeting with us about an **established project**.
 If you haven't met with us yet on this particular project, please start by **requesting support above**.
 
-In the notes field, please specify which team members are optional/required for this meeting.
-Also list any additional emails, and we'll forward the calendar invite to them.
-
 {%
   include button.html
   link="https://outlook.office365.com/owa/calendar/SoftwareEngineeringTeam@olucdenver.onmicrosoft.com/bookings/"
@@ -90,6 +87,9 @@ Also list any additional emails, and we'll forward the calendar invite to them.
   icon="fas fa-calendar"
   style="button"
 %}
+
+In the notes field, please specify which team members are optional/required for this meeting.
+Also list any additional emails, and we'll forward the calendar invite to them.
 
 ### Chat
 
