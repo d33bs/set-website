@@ -22,6 +22,7 @@ tags:
 
 ## What are dependencies? 📦
 
+- Example spectrum between including others work vs writing everything yourself. | <--------------> |
 - [Reinventing the wheel](https://en.wikipedia.org/wiki/Reinventing_the_wheel)
 - [Not invented here](https://en.wikipedia.org/wiki/Not_invented_here)
 - [Bounded context](https://martinfowler.com/bliki/BoundedContext.html)
@@ -58,13 +59,23 @@ _Caption here._
 - Dependency entropy
 - Systems theory stocks, flows, and uncertainty
 
-## Local development uncertainty
+## Dependency uncertainty
 
+- Dependency version ranges
 - Continuous Integration
 - Developer experience (DevEx)
 
-## Reducing uncertainty
+## Reducing uncertainty with lockfiles
 
+- Snapshots in time with lockfiles
+- Layers of depenedency certainty
+
+
+## Using lockfiles
+
+- 
+- Dependabot https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/
+- Renovate https://github.com/renovatebot/renovate
 
 ## Examples
 
