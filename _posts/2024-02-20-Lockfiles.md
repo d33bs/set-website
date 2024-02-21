@@ -22,6 +22,11 @@ tags:
 
 ## What are dependencies? 📦
 
+Writing software often entails reusing existing software to solve common challenges and avoid ["reinventing the wheel"](https://en.wikipedia.org/wiki/Reinventing_the_wheel).
+Using others software "inventions" helps save time and focus but comes with unique challenges like unpredictability.
+These challenges can sometimes lead to ["not invented here syndrome"](https://en.wikipedia.org/wiki/Not_invented_here) where there's less trust in external-facing work outside of an individual or group of people (sometimes resulting in self-centric thinking).
+
+
 - Example spectrum between including others work vs writing everything yourself. | <--------------> |
 - [Reinventing the wheel](https://en.wikipedia.org/wiki/Reinventing_the_wheel)
 - [Not invented here](https://en.wikipedia.org/wiki/Not_invented_here)
