@@ -17,8 +17,8 @@ tags:
 ## Introduction
 
 <!-- excerpt start -->
-Writing software often entails reusing existing software to solve common challenges and take advantage of existing work.
-An external piece of software used by a specific project can be called a "dependency" (the software "depends" on that external work to accomplish tasks).
+Writing software often entails using code from other people to solve common challenges and take advantage of existing work.
+External software used by a specific project can be called a "dependency" (the software "depends" on that external work to accomplish tasks).
 Collections of software are oftentimes made available as "packages" through various platforms.
 [Package management](https://en.wikipedia.org/wiki/Package_manager) for dependencies, the task of managing collections of dependencies for a specific project, is a specialized area of software development that can involve the use of unique tools and files.
 This article will cover package dependency management through special files generally referred to as "lockfiles".
@@ -60,24 +60,26 @@ _Caption here._
 {:.center}
 
 
-Using existing software package dependencies helps conserve resources but comes with unique challenges related to unpredictability.
+Using existing software package dependencies helps conserve resources but comes with unique challenges related to unpredictability (such as when those dependencies are updated).
 This unpredictability can sometimes result in what's colloquially called ["dependency hell"](https://en.wikipedia.org/wiki/Dependency_hell), where for example multiple external dependencies conflict with one another and are unable to be automatically resolved.
 These challenges can be especially frustrating due to when they occur (often outside of our personal schedule awareness) and how long they can take to debug (finding fixes sometimes entails costly [trial-and-error](https://en.wikipedia.org/wiki/Trial_and_error)).
 
 Dependency chaos can sometimes lead to ["not invented here syndrome"](https://en.wikipedia.org/wiki/Not_invented_here) where there's less trust in external-facing work outside of an individual or group of people.
 When or if this happens it can be important to reconsider existing knowledge on a topic area through formal or informal [literature review](https://en.wikipedia.org/wiki/Literature_review) (understanding that code within software is a type of literature).
-Outlining existing work through a literature review can help with [second-order thinking revision](https://en.wikipedia.org/wiki/Revision_(writing)#Reflection_in_the_revision_process) where we might benefit from reflecting on seeing things again after an initial (first-order) creative process.
+Outlining existing work through a literature review can help with [second-order thinking revision](https://en.wikipedia.org/wiki/Revision_(writing)#Reflection_in_the_revision_process) where we might benefit from reflecting on dependency decision-making again after an initial (first-order) creative process.
 
-## Dependency uncertainty
+## Package dependency specification
 
-- Dependency version ranges
-- Continuous Integration
-- Developer experience (DevEx)
+Many aspects of dependency chaos arise from the fact that dependencies are updated at various times.
+We often want to make certain we use the most up-to-date version of a dependency because those updates may come with performance, corrective, or other benefits.
+We can use what are sometimes called dependency "version range constraints" or "compliant version specifications" to provide some flexibility in how packages are installed for our projects.
+These are often specific to the package management system and programming language being used.
+See the [Python Packaging Authority's Version Specifiers section](https://packaging.python.org/en/latest/specifications/version-specifiers/#id5) for an example of how these version constraints work.
 
-## Reducing uncertainty with lockfiles
+## Version constraint determinism
 
-- Snapshots in time with lockfiles
-- Layers of depenedency certainty
+In addition to the flexibility of version range specifications we sometimes require repeatable behavior to be productive with a project.
+For example, we want for each developer and continuous integration step to have reproducible environments even if a dependency gets updated while internal development takes place.
 
 
 ## Using lockfiles
