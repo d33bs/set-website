@@ -1,5 +1,5 @@
 ---
-title: "Lockfiles"
+title: "Navigating Dependency Chaos with Lockfiles"
 author: dave-bunten
 tags:
   - software-education
@@ -8,9 +8,10 @@ tags:
   - dependency-management
   - environment-management
   - software-ecosystems
+  - dependency-chaos
 ---
 
-# Lockfiles
+# Navigating Dependency Chaos with Lockfiles
 
 {% include blog-post-intro.html %}
 
@@ -57,7 +58,7 @@ _Dependencies are often on their own unpredictable schedule outside of your proj
 
 
 Using existing software package dependencies helps conserve resources but comes with unique challenges related to unpredictability (such as when those dependencies are updated).
-This unpredictability can sometimes result in what's colloquially called ["dependency hell"](https://en.wikipedia.org/wiki/Dependency_hell), where for example multiple external dependencies conflict with one another and are unable to be automatically resolved (among other issues).
+This unpredictability can sometimes result in what's colloquially called ["dependency hell" or "dependency chaos"](https://en.wikipedia.org/wiki/Dependency_hell), where for example multiple external dependencies conflict with one another and are unable to be automatically resolved (among other issues).
 These challenges can be especially frustrating due to when they occur (often outside of our personal schedule awareness) and how long they can take to debug (finding fixes sometimes entails costly [trial-and-error](https://en.wikipedia.org/wiki/Trial_and_error)).
 It can feel like walking through a forest at night without a flashlight, constantly tripping over roots or running into stumps and branches!
 
