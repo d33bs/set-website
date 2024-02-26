@@ -342,3 +342,6 @@ Tools like Dependabot or Renovate enable scheduled checks and updates to be appl
 
 ## Concluding Thoughts
 
+This article covered why dependencies are used, what complications they come with, and some tools to use addressing those challenges.
+Every project can vary quite a bit when it comes to dependency management decision making and maintenance.
+We hope you find success with dependency management through these and look forward to providing more information on this topic in the future.
