@@ -34,6 +34,14 @@ Using existing work this way practices a collective ["don't repeat yourself [or 
 Using dependencies allows us to make explicit decisions about the specific focus, or context, which the project will prioritize.
 While it's oftentimes easy to include and use dependencies in a project they come with risks that are important to consider.
 
+See below for a rough list of reasons why one might opt to use specific dependencies in a project:
+
+1. Solutions which entail a lot of [edge cases](https://en.wikipedia.org/wiki/Edge_case) (particularly error prone).
+2. Solutions which need constant maintenance, i.e. a "frequently moving targets".
+3. Solutions which require special domain knowledge or training to correctly implement.
+
+A common dependency which demonstrates these aspects are those which assist with datetimes, timezones, and time deltas.
+
 ## The dependency wilderness
 
 <!-- set a max width for mermaid diagram below so it doesn't render so large -->
@@ -181,7 +189,7 @@ _Version constraint specifications provide code-based descriptions for dependenc
 {:.center}
 
 Many aspects of dependency chaos arise from the fact that dependencies are updated at various times.
-We often want to make certain we use the most up-to-date version of a dependency because those updates may come with performance, corrective, or other benefits.
+We often want to make certain we use the most up-to-date version of a dependency because those updates may come with performance, corrective, security, or other benefits.
 To accomplish this we can use what are sometimes called dependency "version range constraints" or "compliant version specifications" to provide some flexibility in how packages are installed for our projects.
 These are often specific to the package management system and programming language being used.
 See the [Python Packaging Authority's Version Specifiers section](https://packaging.python.org/en/latest/specifications/version-specifiers/#id5) for an example of how these version constraints work.
@@ -233,10 +241,11 @@ sequenceDiagram
 ```
 
 Version constraint lockfiles provide one way to ensure reproducible behaviors within your projects.
+Lockfiles are usually recommended to be included in source control, so one always has a complete snapshot (short of the literal full source code of the dependencies) of the project's last known working configuration.
 
 Lockfiles usually have the following characteristics (this varies by programming language and dependency type):
 
-- Lockfiles usually capture data about existing available dependencies which match a provided version constraint specification as a single file which can be added to source control.
+- Lockfiles capture data about existing available dependencies which match a provided version constraint specification as a single file which can be added to source control.
 - Lockfiles are referenced when available to help create reproducible installations of dependencies.
 - Lockfiles are often automatically created or changed by a package or environment management tool of some kind.
 
