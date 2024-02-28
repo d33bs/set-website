@@ -194,6 +194,7 @@ _Version constraint specifications provide code-based descriptions for dependenc
 Many aspects of dependency chaos arise from the fact that dependencies are updated at various times.
 We often want to make certain we use the most up-to-date version of a dependency because those updates may come with performance, corrective, security, or other benefits.
 To accomplish this we can use what are sometimes called dependency "version range constraints" or "compliant version specifications" to provide some flexibility in how packages are installed for our projects.
+Version ranges are usually preferred to help keep software projects updated and also allow for flexible dependency resolutions (for example, when a single dependency is required by multiple other dependencies).
 These are often specific to the package management system and programming language being used.
 See the [Python Packaging Authority's Version Specifiers section](https://packaging.python.org/en/latest/specifications/version-specifiers/#id5) for an example of how these version constraints work.
 
