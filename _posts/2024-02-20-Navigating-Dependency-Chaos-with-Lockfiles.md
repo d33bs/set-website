@@ -197,6 +197,12 @@ To accomplish this we can use what are sometimes called dependency "version rang
 These are often specific to the package management system and programming language being used.
 See the [Python Packaging Authority's Version Specifiers section](https://packaging.python.org/en/latest/specifications/version-specifiers/#id5) for an example of how these version constraints work.
 
+Many version specification constraints build upon ideas from [semantic versioning (SemVer)](https://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning).
+Generally, SemVer uses a dotted three number syntax which includes a major, minor, and patch version separated by periods.
+For example, a SemVer `1.2.3` represents major version 1, minor version 2, patch 3.
+Developers may use of this type of specification to help differentiate the various releases of their software and help build user confidence about expected operations.
+See the [Semantic Versioning specification at https://semver.org/](https://semver.org/) for more information about how SemVer works.
+
 ## Version constraints can still be chaotic
 
 ```mermaid!
