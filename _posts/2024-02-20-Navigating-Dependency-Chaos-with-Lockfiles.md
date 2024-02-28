@@ -255,9 +255,11 @@ Lockfiles are usually recommended to be included in source control, so one alway
 
 Lockfiles usually have the following characteristics (this varies by programming language and dependency type):
 
-- Lockfiles capture data about existing available dependencies which match a provided version constraint specification as a single file which can be added to source control.
+- Lockfiles capture data about existing available and installable dependencies which match a provided version constraint specification as a single file which can be added to source control.
 - Lockfiles are referenced when available to help create reproducible installations of dependencies.
 - Lockfiles are often automatically created or changed by a package or environment management tool of some kind.
+- Lockfiles focus on reproducibility of dependency installations and don't enable dependency resolution on their own (this is instead a part of version range specification and package management tools).
+- Lockfiles are used by developers, automated procedures (as with [CI/CD](https://en.wikipedia.org/wiki/CI/CD) procedures), [production deployment environments](https://en.wikipedia.org/wiki/Deployment_environment#Production), and elsewhere to help ensure reproducibility.
 
 See the above modified timeline for `Developer B` and `Developer D` to better understand how their project will benefit from a shared lockfile and reproducible dependency installations.
 
