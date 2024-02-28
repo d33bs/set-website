@@ -90,7 +90,11 @@ When or if this happens it can be important to understand dependencies as a __sc
 For example, to accomplish a small project it may not be wise to create a brand new programming language (towards the extreme of overwhelming invention).
 On the other hand, if we depended upon all existing work within a certain context the solution may not be specialized, efficient, or resourceful enough to meet the goals within a reasonable amount of time.
 
-```mermaid!
+<script type="module">
+  import mermaid from 'https://unpkg.com/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+<pre class="mermaid">
 mindmap
   root((Project))
     Data storage
@@ -102,8 +106,7 @@ mindmap
     Integration
       Solution A
       Platform B
-
-```
+</pre>
 
 _Dependency awareness and opportunity can be grouped into concerns and documented as part of a literature review (seen here as a [mind map](https://en.wikipedia.org/wiki/Mind_map))._
 {:.center}
