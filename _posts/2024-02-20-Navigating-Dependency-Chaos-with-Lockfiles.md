@@ -30,9 +30,9 @@ This article will cover package dependency management through special files gene
 {% include figure.html image="https://imgs.xkcd.com/comics/reinvent_the_wheel.png" caption="'Reinvent the Wheel' comic by Randall Munroe, XKCD."  %}
 
 There are various advantages to using packaged dependencies in your projects.
-Using existing work this way practices a collective ["don't repeat yourself [or ourselves]" (DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) to avoid [reinventing the wheel](https://en.wikipedia.org/wiki/Reinventing_the_wheel).
+Using existing work this way practices a collective ["don't repeat yourself [or ourselves]" (DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) among the global community of software developers to avoid [reinventing the wheel](https://en.wikipedia.org/wiki/Reinventing_the_wheel).
 Using dependencies allows us to make explicit decisions about the specific focus, or context, which the project will prioritize.
-While it's oftentimes easy to include and use dependencies in a project they come with important risks that are important to consider.
+While it's oftentimes easy to include and use dependencies in a project they come with risks that are important to consider.
 
 ## The dependency wilderness
 
